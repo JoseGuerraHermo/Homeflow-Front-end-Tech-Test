@@ -11,7 +11,7 @@ Clone this proyect and follow the steps from the [original task](https://bitbuck
 
 ## Test the app!
 
-- In Chrome go to: http://localhost:4567/ 
+- In <ins>Google Chrome</ins> go to: http://localhost:4567/ 
 - Add a City to the input, for example London.
 - Select order ascending.
 <img width="1138" alt="Screenshot 2022-02-17 at 22 42 46" src="https://user-images.githubusercontent.com/52447817/154583540-7df23649-5fbb-4772-b5f0-2172f83d288e.png">
