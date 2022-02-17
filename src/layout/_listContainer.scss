@@ -1,0 +1,159 @@
+$blue: #3295a8;
+
+.listContainer {
+    display: flex;
+    max-height: calc(100vh - 110px); //h1 + form
+
+    &__allProperties {
+        overflow: scroll;
+        width: 35vw;
+
+        .property-item {
+            display: flex;
+            font-size: 15px;
+            flex-direction: column;
+            height: 300px;
+            align-items: center;
+            border: 2px solid $blue;
+            border-radius: 50px;
+            margin: 0 0 10px 10px;
+
+            &__intro {
+                display: flex;
+                flex-direction: column;
+                height: 20%;
+
+                p {
+                    margin: 5px 0;
+                }
+            }
+
+            img {
+                height: 60%;
+                border-radius: 10px;
+            }
+
+            &__no-img {
+                background: lightgray;
+                display: block;
+                height: 60%;
+                width: 80%;
+                border-radius: 50px;
+                position: relative;
+
+                &:before {
+                    content: "Images coming soon...";
+                    top: 50%;
+                    right: 50%;
+                    position: absolute;
+                    transform: translate(50%, -50%);
+                }
+            }
+
+            &__interaction {
+                height: 15%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                margin: 5px 0;
+
+                button {
+                    background-color: $blue;
+                    border: none;
+                    color: white;
+                    padding: 5px 25px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 15px;
+                    cursor: pointer;
+                    border-radius: 15px;
+                }
+            }
+
+            &:hover {
+                background-color: rgba($blue, 0.2);
+            }
+        }
+    }
+
+    &_selectedProperty {
+        width: 65vw;
+        .main-property {
+            margin: 10px;
+
+            .imageGrid {
+                height: 30%;
+                overflow: auto;
+                white-space: nowrap;
+
+                img {
+                    height: 100%;
+                }
+
+                &__no-img {
+                    background: lightgray;
+                    display: block;
+                    height: 100%;
+                    border-radius: 50px;
+                    position: relative;
+    
+                    &:before {
+                        content: "Images coming soon...";
+                        top: 50%;
+                        right: 50%;
+                        position: absolute;
+                        transform: translate(50%, -50%);
+                    }
+                }
+            }
+
+            &__description {
+                height: 25%;
+                overflow: scroll;
+                display: block;
+                margin-top: 5px;
+
+                &--full {
+                    margin: 14px;
+                    font-size: 14px;
+                }
+            }
+
+            &__features {
+                height: 25%;
+                font-size: 14px;
+                justify-content: center;
+                display: flex;
+
+                ul {
+                    list-style-type: none;
+                }
+            }
+
+            &__agency {
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img {
+                    height: 50px;
+                }
+
+                p {
+                    margin-left: 16px;
+                }
+
+                a {
+                    color: $blue;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

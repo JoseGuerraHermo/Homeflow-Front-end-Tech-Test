@@ -1,0 +1,65 @@
+$blue: #3295a8;
+
+.formContainer {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+    &__search {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 15px;
+
+        &--label {
+            margin-right: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        &--input:focus {
+            border: 2px solid $blue;
+            outline: none 0;
+        }
+    }
+
+    &__order {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+
+        &--title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        input[type='radio']:checked:after {
+            width: 12px;
+            height: 12px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: $blue;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+    }
+
+    &__button {
+        button {
+            background-color: $blue;
+            border: none;
+            color: white;
+            padding: 5px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+    }
+}

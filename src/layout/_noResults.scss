@@ -1,0 +1,26 @@
+$blue: #3295a8;
+
+.error-message {
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    
+    ul {
+        font-size: 14px;
+        list-style: none;
+    }
+
+    button {
+        background-color: $blue;
+        border: none;
+        color: white;
+        padding: 5px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+}

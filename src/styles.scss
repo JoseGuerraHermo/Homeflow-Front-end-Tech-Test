@@ -1,14 +1,18 @@
+@import 'layout/form';
+@import 'layout/listContainer';
+@import 'layout/noResults';
+
 body {
   font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
 }
 
 main {
-  padding: 20px;
-  text-align: center;
-  font-size: 18px;
-
   h1 {
-    font-size: 40px;
-    text-align: center;
+    font-size: 30px;
+    height: 35px;
+    margin-bottom: 5px;
   }
 }
+
